@@ -4,4 +4,3 @@ namespace: kong-system
 resources:
   - namespace.yaml
   - release.yaml
-  - setup.yaml

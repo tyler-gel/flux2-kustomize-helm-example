@@ -5,7 +5,7 @@ metadata:
   namespace: kong
 spec:
   targetNamespace: kong
-  interval: 1m
+  interval: 10m
   chart:
     spec:
       # https://github.com/Kong/charts/tree/kong-1.15.2/charts/kong

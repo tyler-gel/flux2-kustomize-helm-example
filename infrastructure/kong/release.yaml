@@ -1,10 +1,11 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: kong
+  name: kong-implementation
   namespace: kong
 spec:
-  interval: 10m
+  targetNamespace: kong
+  interval: 1m
   chart:
     spec:
       # https://github.com/Kong/charts/tree/kong-1.15.2/charts/kong

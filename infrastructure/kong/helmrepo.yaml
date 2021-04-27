@@ -4,5 +4,5 @@ metadata:
   name: kong
   namespace: flux-system
 spec:
-  interval: 30m
+  interval: 1m
   url: https://charts.konghq.com

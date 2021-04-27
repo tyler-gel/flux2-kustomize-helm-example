@@ -14,9 +14,12 @@ spec:
         kind: HelmRepository
         name: kong
         namespace: flux-system
-  interval: 1h0m0s
-    install:
-      remediation:
-        retries: 3
+  install:
+    remediation:
+      retries: 5
+  upgrade:
+    remediation:
+      retries: 5
   values:
-    installCRDs: false
+    ingressController:
+      installCRDs: false

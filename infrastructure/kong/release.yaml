@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       # https://github.com/Kong/charts/tree/kong-1.15.2/charts/kong
-      chart: kong
+      chart: kong/kong
       version: 1.15.2
       sourceRef:
         kind: HelmRepository

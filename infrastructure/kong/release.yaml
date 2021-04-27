@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: tavros-sandbox-kong
+  name: kong
   namespace: kong
 spec:
   targetNamespace: kong
@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       # https://github.com/Kong/charts/tree/kong-1.15.2/charts/kong
-      chart: kong/kong
+      chart: kong
       version: 1.15.2
       sourceRef:
         kind: HelmRepository

@@ -20,5 +20,3 @@ spec:
         retries: 3
   values:
     installCRDs: false
-    ingressController:
-      installCRDs: false
